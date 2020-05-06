@@ -54,7 +54,7 @@ Requester.post('/users', {
   method?: 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH' | 'HEAD' | 'OPTION' | any; // Default: 'GET'
   // Your request origin.
   // E.g. https://google.com/api/foo/bar. https://google.com - base url.
-  baseUrl?: string; // Default: location.origin
+  baseUrl?: string; // Default: ''
   responseType?: 'json' | 'text'; // Default: 'json'
   // Query params with encoding.
   params?: any; // Default: {}

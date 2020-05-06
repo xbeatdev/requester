@@ -3,7 +3,7 @@ import { RequesterConfig, RequesterResponse, HttpMethods, ResponseType } from '.
 export const DEFAULT_REQUESTER_CONFIG: RequesterConfig = {
   url: '',
   method: HttpMethods.GET,
-  baseUrl: location.origin,
+  baseUrl: '',
   responseType: ResponseType.JSON,
   params: {},
   payload: null,
