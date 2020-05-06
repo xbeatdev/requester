@@ -1,14 +1,13 @@
 {
   "name": "@xbeat/requester",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "It can send requests!",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "npm run lint:fix && tsc --declaration",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint --fix . --ext .ts",
-    "test": "jest",
     "copy:readme": "cp -rf README.md dist",
     "copy:pkg": "cp -rf package.json dist",
     "publish:npm": "npm run build && npm run copy:readme && npm run copy:pkg && cd dist && npm publish --access public"
@@ -17,7 +16,13 @@
     "type": "git",
     "url": "git+https://github.com/xbeatdev/requester.git"
   },
-  "keywords": ["http", "xhr", "ajax", "promise", "request"],
+  "keywords": [
+    "http",
+    "xhr",
+    "ajax",
+    "promise",
+    "request"
+  ],
   "author": "Alexandr Vanilchuk <htn.developer@gmail.com>",
   "license": "ISC",
   "bugs": {
@@ -29,7 +34,6 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
-    "@types/jest": "^25.2.1",
     "@types/lodash": "^4.14.150",
     "@types/node": "^13.13.5",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
@@ -48,7 +52,13 @@
     }
   },
   "lint-staged": {
-    "*.ts": ["npm run lint:fix", "git add"],
-    ".js": ["npm run lint:fix", "git add"]
+    "*.ts": [
+      "npm run lint:fix",
+      "git add"
+    ],
+    ".js": [
+      "npm run lint:fix",
+      "git add"
+    ]
   }
 }
