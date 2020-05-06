@@ -24,7 +24,6 @@ export default (
     const benchmarkStart = Date.now();
     xhr.open(method, url, true, ...authParams);
     setRequestHeaders(xhr, headers);
-
     xhr.send(config.payload);
 
     xhr.onreadystatechange = handleRequest(
@@ -37,5 +36,9 @@ export default (
       },
       { resolve, reject }
     );
+
+    xhr.onerror = (info) => {
+      reject({ url, config, headers });
+    };
   });
 };
