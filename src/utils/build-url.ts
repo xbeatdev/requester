@@ -13,7 +13,7 @@ export default ({ url, baseUrl, params }: RequesterConfig): string => {
 
   if (url) {
     const path = getFirstChar(url) === '/' ? removeFirstSlash(url) : url;
-    combinedUrl += `/${path}`;
+    combinedUrl += `${baseUrl && '/'}${path}`;
   }
 
   if (params) {
