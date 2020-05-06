@@ -1,6 +1,6 @@
 {
   "name": "@xbeat/requester",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "It can send requests!",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,7 +17,13 @@
     "type": "git",
     "url": "git+https://github.com/xbeatdev/requester.git"
   },
-  "keywords": ["http", "xhr", "ajax", "promise", "request"],
+  "keywords": [
+    "http",
+    "xhr",
+    "ajax",
+    "promise",
+    "request"
+  ],
   "author": "Alexandr Vanilchuk <htn.developer@gmail.com>",
   "license": "ISC",
   "bugs": {
@@ -48,7 +54,13 @@
     }
   },
   "lint-staged": {
-    "*.ts": ["npm run lint:fix", "git add"],
-    ".js": ["npm run lint:fix", "git add"]
+    "*.ts": [
+      "npm run lint:fix",
+      "git add"
+    ],
+    ".js": [
+      "npm run lint:fix",
+      "git add"
+    ]
   }
 }
