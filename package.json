@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "It can send requests!",
   "main": "index.js",
-  "types": "jeindex.d.ts",
+  "types": "index.d.ts",
   "scripts": {
     "build": "npm run lint:fix && tsc --declaration",
     "lint": "eslint . --ext .ts",
