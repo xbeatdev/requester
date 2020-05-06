@@ -1,6 +1,6 @@
 {
   "name": "@xbeat/requester",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "It can send requests!",
   "main": "index.js",
   "types": "index.d.ts",
